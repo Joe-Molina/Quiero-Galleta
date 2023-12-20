@@ -1,0 +1,46 @@
+---
+interface Props {}
+
+const {} = Astro.props;
+
+const galletasTop = [
+  {
+    foto: "galletas/monstruosas/nutella_sal_marina.png",
+    nombre: "Nutella con sal marina",
+  },
+  {
+    foto: "galletas/monstruosas/doble_chispas_de_chocolate.png",
+    nombre: "Doble chispas de chocolate",
+  },
+  {
+    foto: "galletas/monstruosas/TripleChocolate.png",
+    nombre: "Triple chocolate",
+  },
+  {
+    foto: "galletas/monstruosas/Limon.png",
+    nombre: "Limon",
+  },
+  {
+    foto: "galletas/especiales/RedVelvet.png",
+    nombre: "Red Velvet",
+  },
+];
+---
+
+<section class="m-3 bg-white rounded-xl">
+  <header class="flex justify-between items-center px-7 h-20 font-bold">
+    <h2 class="text-xl">TOP 5 2023</h2>
+    <h3 class="text-xl">Mejores Galletas</h3>
+  </header>
+
+  <article>
+    {
+      galletasTop.map((galleta) => (
+        <div class="flex items-center px-5 py-1 border-t border-black">
+          <img src={galleta.foto} alt="" class="h-20 pr-3" />
+          <p class="font-bold">{galleta.nombre}</p>
+        </div>
+      ))
+    }
+  </article>
+</section>
