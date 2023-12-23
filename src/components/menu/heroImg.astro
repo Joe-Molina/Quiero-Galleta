@@ -1,0 +1,21 @@
+---
+interface props {
+  linkImg: String;
+  title: String;
+}
+
+const { linkImg, title } = Astro.props;
+---
+
+<figure
+  class="bg-heroimg mt-20 flex justify-center items-center overflow-hidden h-64"
+>
+  <img
+    src={linkImg}
+    alt=""
+    class="absolute bg-cover bg-no-repeat -z-10 w-full"
+  />
+  <h1 class="text-8xl text-white font-thin">
+    {title}
+  </h1>
+</figure>
