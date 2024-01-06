@@ -14,16 +14,28 @@ export const HeaderNav = () => {
   const menuOpen = getMenu ? (
     <article className="fixed w-screen h-full z-20 bg-blue-100 top-20 left-0 flex justify-center items-center">
       <nav className=" absolute flex flex-col justify-start items-center h-full   w-full text-center pt-16">
-        <a href="/MenuGalletas" className=" text-2xl py-10  hover:bg-blue-400">
+        <a
+          href="/"
+          className=" text-2xl my-6 p-4 rounded-full hover:text-white  hover:bg-blue-400"
+        >
           Inicio
         </a>
-        <a href="" className=" text-2xl py-10  hover:bg-blue-400">
+        <a
+          href="/MenuGalletas"
+          className=" text-2xl my-6 p-4 rounded-full hover:text-white  hover:bg-blue-400"
+        >
           Galletas
         </a>
-        <a href="" className=" text-2xl py-10  hover:bg-blue-400">
+        <a
+          href=""
+          className=" text-2xl my-6 p-4 rounded-full hover:text-white  hover:bg-blue-400"
+        >
           Brownies
         </a>
-        <a href="" className=" text-2xl py-10  hover:bg-blue-400">
+        <a
+          href=""
+          className=" text-2xl my-6 p-4 rounded-full hover:text-white hover:bg-blue-400 "
+        >
           Bebidas
         </a>
       </nav>

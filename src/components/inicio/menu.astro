@@ -5,51 +5,53 @@ const {} = Astro.props;
 ---
 
 <section>
-  <h1 class="text-center text-5xl font-thin text-shadow mt-5">Menu</h1>
+  <h1 class="text-center text-5xl font-bold text-shadow mt-5">Menu</h1>
   <p class="text-center mt-3 font-bold">¡Monstruosamente deliciosas!</p>
 
-  <article
-    class="flex items-center justify-between h-32 m-3 bg-green-200 rounded-xl shadow-lg overflow-hidden"
-  >
-    <img
-      src="/galletas/monstruosas/nutella_sal_marina.png"
-      alt=""
-      class="h-28 ml-5"
-    />
-    <div class="flex justify-center items-center h-full w-1/2 bg-white">
-      <p class="text-4xl font-extralight text-shadow">Galletas</p>
-    </div>
-  </article>
+  <a href="/MenuGalletas">
+    <article
+      class="flex items-center justify-between h-32 m-3 bg-green-200 rounded-xl shadow-lg overflow-hidden"
+    >
+      <img
+        src="/galletas/monstruosas/nutella_sal_marina.png"
+        alt=""
+        class="h-28 ml-5"
+      />
+      <div class="flex justify-center items-center h-full w-1/2 bg-white">
+        <p class="text-3xl font-normal text-shadow">Galletas</p>
+      </div>
+    </article>
+  </a>
 
-  <article
-    class="flex flex-row-reverse items-center justify-between h-32 m-3 bg-blue-300 rounded-xl shadow-lg overflow-hidden"
-  >
-    <img
-      src="/brownies/brookieDeNutellaSalMarina.png"
-      alt=""
-      class="h-28 mr-5"
-    />
-    <div class="flex justify-center items-center h-full w-1/2 bg-white">
-      <p class="text-4xl font-extralight text-shadow">Brownies</p>
-    </div>
-  </article>
+  <a href="">
+    <article
+      class="flex flex-row-reverse items-center justify-between h-32 m-3 bg-blue-300 rounded-xl shadow-lg overflow-hidden"
+    >
+      <img
+        src="/brownies/brookieDeNutellaSalMarina.png"
+        alt=""
+        class="h-28 mr-5"
+      />
+      <div class="flex justify-center items-center h-full w-1/2 bg-white">
+        <p class="text-3xl font-normal text-shadow">Brownies</p>
+      </div>
+    </article>
+  </a>
 
-  <article
-    class="flex items-center justify-between h-32 m-3 bg-red-300 rounded-xl shadow-lg overflow-hidden"
-  >
-    <img
-      src="/bebidas/OtrasBebidas-removebg-preview.png"
-      alt=""
-      class="h-28 ml-5"
-    />
-    <div class="flex justify-center items-center h-full w-1/2 bg-white">
-      <p class="text-4xl font-extralight text-shadow">Galletas</p>
-    </div>
-  </article>
+  <a href="">
+    <article
+      class="flex items-center justify-between h-32 m-3 bg-red-300 rounded-xl shadow-lg overflow-hidden"
+    >
+      <img
+        src="/bebidas/OtrasBebidas-removebg-preview.png"
+        alt=""
+        class="h-28 ml-5"
+      />
+      <div class="flex justify-center items-center h-full w-1/2 bg-white">
+        <p class="text-3xl font-normal text-shadow">Galletas</p>
+      </div>
+    </article>
+  </a>
 </section>
 
-<style>
-  .text-shadow {
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-  }
-</style>
+<style></style>

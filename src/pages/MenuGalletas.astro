@@ -8,12 +8,12 @@ import MenuSection from "../components/menu/menuGalleta.astro";
 
 <Layout title="Quiero Galleta">
   <HeaderNav client:visible />
-  <HeroImg title="Galletas" linkImg="/fondos/fondo1.svg" />
+  <HeroImg title="Galletas" linkImg="/fondos/galletasfondo.png" />
   <p class="mt-16 bg-white py-2 px-8 mx-8 text-center shadow-xl rounded-lg">
     Todas nuestras galletas pesan entre 70 y 80 gramos
   </p>
-  <section>
-    <h1 class="text-center text-5xl font-thin text-shadow mt-5">
+  <section class="flex flex-col">
+    <h1 class="text-center text-4xl font-bold text-shadow mt-5">
       Menu Galletas
     </h1>
     <MenuSection
@@ -22,15 +22,18 @@ import MenuSection from "../components/menu/menuGalleta.astro";
       colorandflex="bg-red-200"
     />
     <MenuSection
-      titulo="Monstruosas"
-      img="/galletas/monstruosas/nutella_sal_marina.png"
+      titulo="Especiales"
+      img="/galletas/especiales/DulceDeLeche.png"
       colorandflex="bg-blue-200 flex-row-reverse"
     />
     <MenuSection
-      titulo="Monstruosas"
-      img="/galletas/monstruosas/nutella_sal_marina.png"
+      titulo="Saludables"
+      img="/galletas/saludables/ChispasDeChocolateSaludable.png"
       colorandflex="bg-green-200"
     />
+    <figure class="m-3">
+      <img src="/fondos/Mverde.png" alt="" class="rounded-2xl" />
+    </figure>
   </section>
 
   <Footer />
