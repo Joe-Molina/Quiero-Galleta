@@ -21,19 +21,19 @@ export const HeaderNav = () => {
           Inicio
         </a>
         <a
-          href="/MenuGalletas"
+          href="/Menu/Galletas"
           className=" text-2xl my-6 p-4 rounded-full hover:text-white  hover:bg-blue-400"
         >
           Galletas
         </a>
         <a
-          href=""
+          href="/Menu/Brownies"
           className=" text-2xl my-6 p-4 rounded-full hover:text-white  hover:bg-blue-400"
         >
           Brownies
         </a>
         <a
-          href=""
+          href="/Menu/Bebidas"
           className=" text-2xl my-6 p-4 rounded-full hover:text-white hover:bg-blue-400 "
         >
           Bebidas
