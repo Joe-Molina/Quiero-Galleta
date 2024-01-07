@@ -5,26 +5,27 @@ import HeroImg from "../../../components/menu/heroImg.astro";
 import Footer from "../../../components/footer.astro";
 import { CardPrice } from "../../../components/menu/CardPrice.jsx";
 import CardProduct from "../../../components/menu/CardProduct.astro";
-import { Espaciales } from "../../../info/Galletas.js";
-import { preciosEspaciales } from "../../../info/precios.js";
+import { saludables } from "../../../info/Galletas.js";
+import { preciosSaludables } from "../../../info/precios.js";
 ---
 
 <Layout title="QG Menu de Galletas">
   <HeaderNav client:visible />
-  <HeroImg title="Especiales" linkImg="/fondos/galletasfondo.png" />
+  <HeroImg title="Saludables" linkImg="/fondos/galletasfondo.png" />
   <article
     class="mt-16 bg-white py-2 px-8 mx-4 text-center shadow-xl rounded-lg"
   >
     <h3 class="font-bold">Precios</h3>
     {
-      preciosEspaciales.map((data) => (
+      preciosSaludables.map((data) => (
         <CardPrice precio={data.precio} cantidad={data.cantidad} />
       ))
     }
   </article>
+
   <section class="flex flex-col">
     {
-      Espaciales.map((galleta) => (
+      saludables.map((galleta) => (
         <CardProduct
           title={galleta.title}
           img={galleta.img}

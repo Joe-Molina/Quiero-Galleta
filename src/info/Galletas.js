@@ -40,3 +40,54 @@ export const monstruosas = [
     text: "Contiene sprinkles de colores y chispas de chocolate blanco.",
   },
 ];
+
+export const Espaciales = [
+  {
+    img: "/galletas/especiales/Manzanaa.png",
+    title: "Manzana",
+    text: "Galleta rellena de manzana, azucar y  canela.",
+  },
+  {
+    img: "/galletas/especiales/caramelosalado.png",
+    title: "Caramelo salado",
+    text: "Galleta de trozos de caramelo crocante y chocolate con leche + sirope de caramelo salado",
+  },
+  {
+    img: "/galletas/especiales/RedVelvet.png",
+    title: "Red velvet",
+    text: "Esta es una torta que quiso convertirse en galleta. Contiene chispas de chocolate blanco, rellena de queso crema.",
+  },
+  {
+    img: "/galletas/especiales/cookiesAndCream.png",
+    title: "Cookies and cream",
+    text: "Galleta con trozos de chocolate blanco y mas trozos de galleta de chocolate. ¿Puede ser mejor?",
+  },
+  {
+    img: "/galletas/especiales/DulceDeLeche.png",
+    title: "Cheesecake de dulce de leche",
+    text: "Galleta de mantequilla rellena de crema de cheesecake con topping de dulce de leche.",
+  },
+];
+
+export const saludables = [
+  {
+    img: "/galletas/saludables/ChispasDeChocolateSaludable.png",
+    title: "Chispas de chocolate",
+    text: "Galleta saludable, endulzada con azucar de coco y chispas de chocolate oscuro sin azucar.",
+  },
+  {
+    img: "/galletas/saludables/DobleChocolateSaludable.png",
+    title: "Doble chocolate",
+    text: "Galleta saludable, hecha con harina de almendras, endulzada con monkfruit. Contiene gotas de chocolate blanco y oscuro sin azucar. ",
+  },
+  {
+    img: "/galletas/saludables/pistachoSaludable.png",
+    title: "pistacho",
+    text: "Galleta saludable, endulzada con azucar de coco. Contiene chispas de chocolate oscuro sin azucar y trozos de pistacho. ",
+  },
+  {
+    img: "/galletas/saludables/TripleChocolateSaludable.png",
+    title: "Triple chocolate",
+    text: "Galleta saludable de chocolate, hecha con harina de almendras, cacao, endulzada con monkfruit. Contiene gotas de chocolate blanco y oscuro sin azucar.",
+  },
+];
