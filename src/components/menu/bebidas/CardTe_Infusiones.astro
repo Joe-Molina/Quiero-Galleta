@@ -1,0 +1,38 @@
+---
+interface props {
+  name: String;
+  details: String;
+  price: string;
+  type: string;
+}
+
+const { type, priceCaliente, priceFrio, name, details } = Astro.props;
+---
+
+<article
+  class="mx-2 my-4 shadow-xl rounded-xl flex justify-between items-center p-2"
+>
+  <div class="p-1 bg-neutral-50">
+    {
+      type && (
+        <p class="text-xs py-1 my-1 bg-red-300 w-28 text-center rounded-xl">
+          {type}
+        </p>
+      )
+    }
+    <h3 class="font-bold">{name}</h3>
+    <p class="text-xs text-zinc-500 max-w-60">{details}</p>
+  </div>
+  {
+    priceCaliente && (
+      <span class="py-3 w-36 text-center">
+        <p class="font-bold text-xs bg-red-200 p-1 my-1 rounded-xl text-red-900">
+          {priceCaliente}
+        </p>
+        <p class="font-bold text-xs bg-blue-200 p-1 my-1 rounded-xl text-blue-900">
+          {priceFrio}
+        </p>
+      </span>
+    )
+  }
+</article>

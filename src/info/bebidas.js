@@ -52,7 +52,7 @@ export const Caliente = [
   },
 ];
 
-export const CafeFrio = [
+export const Frio = [
   {
     name: "Quiero Galleta",
     details:
@@ -102,7 +102,7 @@ export const CafeFrio = [
   },
 ];
 
-export const Infusiones = [
+export const Te = [
   {
     name: "Matcha latte caliente",
     price: ["4,00$"],
@@ -117,20 +117,23 @@ export const Infusiones = [
     type: "Tisana & Blends",
     name: "Madame Butterfly",
     details: "Flores de clitoria ternatea y hojas de menta",
-    price: ["Frio: 4,50$", "Caliente: 3,00$"],
+    priceCaliente: "Caliente: 3,00$",
+    priceFrio: "Frio: 4,50$",
   },
   {
     type: "Tisana & Blends",
     name: "Blueberry wine",
     details:
       "Trozos de manzana, flor de caena, petalos de aciano y frutos rojos",
-    price: ["Frio: 4,50$", "Caliente: 3,00$"],
+    priceCaliente: "Caliente: 3,00$",
+    priceFrio: "Frio: 4,50$",
   },
   {
     type: "Te verde",
     name: "Green Strawberry",
     details: "Te verde grado sencha con trocitos de fresa y lechosa",
-    price: ["Frio: 4,50$", "Caliente: 3,00$"],
+    priceCaliente: "Caliente: 3,00$",
+    priceFrio: "Frio: 4,50$",
   },
   {
     type: "Favoritos",
