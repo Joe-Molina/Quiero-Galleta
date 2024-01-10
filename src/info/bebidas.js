@@ -1,4 +1,4 @@
-export const CafeCaliente = [
+export const Caliente = [
   {
     name: "Espresso",
     details: "",

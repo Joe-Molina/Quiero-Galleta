@@ -1,0 +1,43 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { HeaderNav } from "../../components/header";
+import HeroImg from "../../components/menu/heroImg.astro";
+import Footer from "../../components/footer.astro";
+import MenuSection from "../../components/menu/menuBebida.astro";
+---
+
+<Layout title="QG Menu de Bebidas">
+  <HeaderNav client:visible />
+  <HeroImg title="Bebidas" linkImg="/fondos/galletasfondo.png" />
+  <p class="mt-16 bg-white py-2 px-8 mx-8 text-center shadow-lg rounded-lg">
+    ¡Escoge tu bebida favorita!
+  </p>
+  <section class="flex flex-col">
+    <h1 class="text-center text-4xl font-bold text-shadow mt-5">Bebidas</h1>
+    <MenuSection
+      link="Bebidas/Cafe_caliente"
+      titulo="Cafe caliente"
+      tipoBebida="bg-[url('/bebidas/CafeCaliente.jpg')]"
+    />
+    <MenuSection
+      link="Bebidas/Cafe_Frio"
+      titulo="Cafe frio"
+      tipoBebida="bg-[url('/bebidas/CafeFrio.jpg')] flex-row-reverse"
+    />
+    <MenuSection
+      link="Bebidas/Te_Infusiones"
+      titulo="Te Infusiones"
+      tipoBebida="bg-[url('/bebidas/TeInfusiones.jpg')]"
+    />
+    <MenuSection
+      link="Bebidas/Otras_Bebidas"
+      titulo="Otras bebidas"
+      tipoBebida="bg-[url('/bebidas/OtrasBebidas.jpg')]"
+    />
+    <figure class="m-3">
+      <img src="/fondos/Mverde.png" alt="" class="rounded-2xl" />
+    </figure>
+  </section>
+
+  <Footer />
+</Layout>
