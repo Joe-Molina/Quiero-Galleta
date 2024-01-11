@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export const HeaderNav = () => {
   const [getMenu, setGetMenu] = useState(false);
@@ -44,8 +44,21 @@ export const HeaderNav = () => {
     <></>
   );
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentPosition = document.documentElement.scrollTop;
+      if (currentPosition > 0) {
+        console.log("coito");
+      }
+    };
+  });
+
   return (
     <header className="bg-white h-20 flex items-center justify-between px-5 fixed top-0 z-50 w-full">
+      <a href="../../" className="bg-red-300 rounded-full p-1">
+        <img src="/arrow.svg" alt="" className="w-10   " />
+      </a>
+
       <img src="/quieroGalletaLogo.svg" className="h-10" alt="" />
 
       <button href="" className={buttonGetMenu} onClick={handleClick}>

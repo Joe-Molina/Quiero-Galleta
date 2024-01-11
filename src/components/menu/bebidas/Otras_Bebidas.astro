@@ -9,13 +9,13 @@ const { price, name, details } = Astro.props;
 ---
 
 <article
-  class="p-3 mx-2 my-4 shadow-md rounded-xl flex justify-between items-center"
+  class="p-3 mx-2 my-4 shadow-xl rounded-xl flex justify-between items-center"
 >
   <div class="p-3">
     <h3 class="font-bold">{name}</h3>
     <p class="text-xs text-zinc-500">{details}</p>
   </div>
   <span class="p-3">
-    <p class="font-bold">{price}</p>
+    <p class="font-bold text-end">{price}</p>
   </span>
 </article>

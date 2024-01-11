@@ -1,15 +1,15 @@
 ---
-import Layout from "../../../layouts/Layout.astro";
-import { HeaderNav } from "../../../components/header.jsx";
-import HeroImg from "../../../components/menu/heroImg.astro";
-import Footer from "../../../components/footer.astro";
-import CardBebida from "../../../components/menu/bebidas/CardTe_Infusiones.astro";
-import { Te } from "../../../info/bebidas.js";
+import Layout from "../../layouts/Layout.astro";
+import { HeaderNav } from "../../components/header.jsx";
+import HeroImg from "../../components/menu/heroImg.astro";
+import Footer from "../../components/footer.astro";
+import CardBebida from "../../components/menu/bebidas/CardTe_Infusiones.astro";
+import { Te } from "../../info/bebidas.js";
 ---
 
 <Layout title="Te e Infusiones">
   <HeaderNav client:visible />
-  <HeroImg title="Te e infusiones" linkImg="/fondos/galletasfondo.png" />
+  <HeroImg title="Te infusiones" linkImg="/fondos/galletasfondo.png" />
   <section class="flex flex-col mt-10">
     {
       Te.map((bebida) => (

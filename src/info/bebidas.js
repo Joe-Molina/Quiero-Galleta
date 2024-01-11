@@ -173,30 +173,30 @@ export const Te = [
   },
 ];
 
-export const OtrasBebidas = [
+export const Otrasbebidas = [
   {
     name: "Vaso con leche",
-    name: "1,50$",
+    price: "1,50$",
   },
   {
     name: "Agua mineral",
-    name: "1,50$",
+    price: "1,50$",
   },
   {
     name: "Agua con gas",
-    name: "2,00$",
+    price: "2,00$",
   },
   {
     name: "Te lipton",
-    name: "2,50$",
+    price: "2,50$",
   },
   {
     name: "Refresco",
-    name: "2,50$",
+    price: "2,50$",
   },
   {
     name: "Chocolate Caliente",
-    name: "2,50$",
+    price: "2,50$",
   },
   {
     name: "Toddy Espacial",
