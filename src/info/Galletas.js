@@ -91,3 +91,26 @@ export const saludables = [
     text: "Galleta saludable de chocolate, hecha con harina de almendras, cacao, endulzada con monkfruit. Contiene gotas de chocolate blanco y oscuro sin azucar.",
   },
 ];
+
+export const brownies = [
+  {
+    img: "/brownies/salmarina.png",
+    title: "Brookie de nutella con sal marina",
+    text: "130gr de brownie fudge + 70gr de galleta de nutella con sal marina.",
+  },
+  {
+    img: "/brownies/chispaschocolate.png",
+    title: "Brookie de chispas de chocolate",
+    text: "130gr de brownie fudge + 70gr de galleta de chispas de chocolate.",
+  },
+  {
+    img: "/brownies/nuez.png",
+    title: "Brookie de chispas y nuez",
+    text: "130gr de brownie fudge + 70gr de galleta de chispas de chocolate y trozos de nuez.",
+  },
+  {
+    img: "/brownies/big.png",
+    title: "Brookie grande",
+    text: "Solo por encargo - tamaño 20x20cm - peso 800gr  Pidelo del sabor de tu galleta favorita.",
+  },
+];

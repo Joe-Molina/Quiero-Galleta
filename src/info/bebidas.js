@@ -129,9 +129,9 @@ export const Te = [
     priceFrio: "Frio: 4,50$",
   },
   {
-    type: "Te verde",
+    type: "Té verde",
     name: "Green Strawberry",
-    details: "Te verde grado sencha con trocitos de fresa y lechosa",
+    details: "Té verde grado sencha con trocitos de fresa y lechosa",
     priceCaliente: "Caliente: 3,00$",
     priceFrio: "Frio: 4,50$",
   },
@@ -145,7 +145,7 @@ export const Te = [
     type: "Favoritos",
     name: "Siempre Verano",
     details:
-      "Base de te buttefly, endulzado con almibar, realizado con limon y cobertura de te strawberry",
+      "Base de Té buttefly, endulzado con almibar, realizado con limon y cobertura de te strawberry",
   },
 
   {
@@ -161,15 +161,15 @@ export const Te = [
       "Infusion herbal con sabor a limon. Rooibos, con hierba y petalos de calendula",
   },
   {
-    type: "Te verde",
+    type: "Té verde",
     name: "Sweet Mango",
     details:
-      "Te verde estilo japones con trocitos de piña, mango y flores malva",
+      "Té verde estilo japones con trocitos de piña, mango y flores malva",
   },
   {
-    type: "Te negro",
+    type: "Té negro",
     name: "Tropical Morning",
-    details: "Te negro con guayaba, lechosa y petalos de cartamo",
+    details: "Té negro con guayaba, lechosa y petalos de cartamo",
   },
 ];
 
