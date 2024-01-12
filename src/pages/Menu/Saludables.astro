@@ -11,9 +11,12 @@ import { preciosSaludables } from "../../info/precios.js";
 
 <Layout title="QG Menu de Galletas">
   <HeaderNav client:visible />
-  <HeroImg title="Saludables" bg="bg-[url('/fondos/saludables.png')]" />
+  <HeroImg
+    title="Saludables"
+    bg="bg-[url('/fondos/saludables.png')] lg:bg-[url('/fondos/saludablesD.png')]"
+  />
   <article
-    class="my-2 bg-white py-2 px-8 mx-4 text-center shadow-xl rounded-lg"
+    class="my-2 bg-white py-2 px-8 mx-4 text-center shadow-xl rounded-lg lg:w-96 lg:mx-auto"
   >
     <h3 class="font-bold">Precios</h3>
     {
@@ -23,7 +26,9 @@ import { preciosSaludables } from "../../info/precios.js";
     }
   </article>
 
-  <section class="flex flex-col">
+  <section
+    class="flex flex-col lg:flex-row lg:flex-wrap lg:justify-center lg:mb-5"
+  >
     {
       saludables.map((galleta) => (
         <CardProduct
@@ -33,7 +38,7 @@ import { preciosSaludables } from "../../info/precios.js";
         />
       ))
     }
-    <figure class="m-3">
+    <figure class="m-3 lg:hidden">
       <img src="/fondos/galletasfondo2.png" alt="" class="rounded-2xl" />
     </figure>
   </section>
