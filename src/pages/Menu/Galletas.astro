@@ -8,14 +8,13 @@ import MenuSection from "../../components/menu/menuGalleta.astro";
 
 <Layout title="QG Menu de Galletas">
   <HeaderNav client:visible />
-  <HeroImg title="Galletas" linkImg="/fondos/galletasfondo.png" />
-  <p class="mt-16 bg-white py-2 px-8 mx-8 text-center shadow-xl rounded-lg">
+  <HeroImg title="Galletas" bg="bg-[url('/fondos/fondo1.svg')]" />
+  <p
+    class="my-2 bg-white py-2 px-8 mx-8 text-center shadow-lg rounded-lg lg:w-96 lg:mx-auto lg:my-5"
+  >
     Todas nuestras galletas pesan entre 70 y 80 gramos
   </p>
-  <section class="flex flex-col">
-    <h1 class="text-center text-4xl font-bold text-shadow mt-5">
-      Menu de Galletas
-    </h1>
+  <section class="flex flex-col lg:flex-row lg:justify-center lg:mb-10">
     <MenuSection
       link="Monstruosas"
       titulo="Monstruosas"
@@ -34,10 +33,10 @@ import MenuSection from "../../components/menu/menuGalleta.astro";
       img="/galletas/saludables/ChispasDeChocolateSaludable.png"
       colorandflex="bg-green-200"
     />
-    <figure class="m-3">
-      <img src="/fondos/Mverde.png" alt="" class="rounded-2xl" />
-    </figure>
   </section>
+  <figure class="m-3 lg:hidden">
+    <img src="/fondos/Mverde.png" alt="" class="rounded-2xl" />
+  </figure>
 
   <Footer />
 </Layout>

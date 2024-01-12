@@ -8,12 +8,15 @@ import MenuSection from "../../components/menu/menuBebida.astro";
 
 <Layout title="QG Menu de Bebidas">
   <HeaderNav client:visible />
-  <HeroImg title="Bebidas" linkImg="/fondos/galletasfondo.png" />
-  <p class="mt-16 bg-white py-2 px-8 mx-8 text-center shadow-lg rounded-lg">
+  <HeroImg title="Bebidas" bg="bg-[url('/fondos/fondobebidas.png')]" />
+  <p
+    class="my-2 bg-white py-2 px-8 mx-8 text-center shadow-lg rounded-lg lg:w-96 lg:mx-auto lg:my-5"
+  >
     ¡Escoge tu bebida favorita!
   </p>
-  <section class="flex flex-col">
-    <h1 class="text-center text-4xl font-bold text-shadow mt-5">Bebidas</h1>
+  <section
+    class="flex flex-col lg:flex-row lg:justify-center lg:mb-10 lg:flex-wrap"
+  >
     <MenuSection
       link="Cafe_caliente"
       titulo="Cafe caliente"
@@ -34,7 +37,7 @@ import MenuSection from "../../components/menu/menuBebida.astro";
       titulo="Otras bebidas"
       tipoBebida="bg-[url('/bebidas/OtrasBebidas.jpg')]"
     />
-    <figure class="m-3">
+    <figure class="m-3 lg:hidden">
       <img src="/fondos/Mverde.png" alt="" class="rounded-2xl" />
     </figure>
   </section>

@@ -1,21 +1,16 @@
 ---
 interface props {
-  linkImg: String;
   title: String;
+  bg: string;
 }
 
-const { linkImg, title } = Astro.props;
+const { title, bg } = Astro.props;
 ---
 
 <figure
-  class="bg-heroimg mt-20 flex justify-center items-center overflow-hidden h-64"
+  class=`mt-20 fondo relative w-full h-72 flex justify-center items-center bg-cover ${bg} lg:h-[500px] lg:max-w-[1280px] lg:mx-auto`
 >
-  <img
-    src={linkImg}
-    alt=""
-    class="absolute bg-cover bg-no-repeat -z-10 w-full"
-  />
-  <h1 class="text-5xl text-white font-extralight">
+  <h1 class="text-5xl lg:text-8xl text-white font-extralight drop-shadow-xl">
     {title}
   </h1>
 </figure>

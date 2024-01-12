@@ -9,8 +9,10 @@ import { Te } from "../../info/bebidas.js";
 
 <Layout title="Te e Infusiones">
   <HeaderNav client:visible />
-  <HeroImg title="Te infusiones" linkImg="/fondos/galletasfondo.png" />
-  <section class="flex flex-col mt-10">
+  <HeroImg title="Té e infusiones" bg="bg-[url('/bebidas/te.png')]" />
+  <section
+    class="flex flex-col lg:flex-row lg:flex-wrap lg:justify-center lg:max-w-[1280px] lg:mx-auto lg:my-5"
+  >
     {
       Te.map((bebida) => (
         <CardBebida
@@ -22,7 +24,7 @@ import { Te } from "../../info/bebidas.js";
         />
       ))
     }
-    <figure class="m-3">
+    <figure class="m-3 lg:hidden">
       <img src="/fondos/galletasfondo2.png" alt="" class="rounded-2xl" />
     </figure>
   </section>

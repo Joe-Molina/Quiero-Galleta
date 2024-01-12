@@ -9,13 +9,15 @@ import { Frio } from "../../info/bebidas.js";
 
 <Layout title="Bebidas Cafe Frio">
   <HeaderNav client:visible />
-  <HeroImg title="Cafe Frio" linkImg="/fondos/galletasfondo.png" />
+  <HeroImg title="Cafe Frio" bg="bg-[url('/bebidas/frio.png')]" />
   <article
-    class="mt-16 bg-white py-2 px-8 mx-4 text-center shadow-xl rounded-lg"
+    class="my-2 bg-white py-2 px-8 mx-4 text-center shadow-xl rounded-lg lg:w-96 lg:mx-auto lg:my-5"
   >
     <h3 class="font-normal">Agrega crema batida por solo 0,50$</h3>
   </article>
-  <section class="flex flex-col">
+  <section
+    class="flex flex-col lg:flex-row lg:flex-wrap lg:max-w-[1280px] lg:mx-auto lg:justify-center lg:mb-5"
+  >
     {
       Frio.map((bebida) => (
         <CardBebida
@@ -26,7 +28,7 @@ import { Frio } from "../../info/bebidas.js";
         />
       ))
     }
-    <figure class="m-3">
+    <figure class="m-3 lg:hidden">
       <img src="/fondos/galletasfondo2.png" alt="" class="rounded-2xl" />
     </figure>
   </section>

@@ -9,12 +9,18 @@ interface Props {
 const { titulo, img, colorandflex, link } = Astro.props;
 ---
 
-<a href={link}>
+<a href={link} class="lg:hover:scale-105 transition">
   <article
-    class=`flex items-center justify-between h-32 m-3 rounded-xl shadow-sm overflow-hidden ${colorandflex}`
+    class=`flex items-center justify-between h-32 m-3 rounded-xl shadow-sm overflow-hidden ${colorandflex} lg:flex-col lg:w-96 lg:h-96 lg:shadow-lg`
   >
-    <img src=`${img}` alt="" class="h-28 mx-5" />
-    <div class="flex justify-center items-center h-full w-1/2 bg-white">
+    <img
+      src=`${img}`
+      alt=""
+      class="h-28 mx-5 lg:w-2/3 lg:h-2/3 lg:p-5 lg:mt-5"
+    />
+    <div
+      class="flex justify-center items-center h-full w-1/2 bg-white lg:w-full lg:h-20"
+    >
       <p class="text-2xl font-normal">{titulo}</p>
     </div>
   </article>

@@ -11,8 +11,10 @@ import Footer from "../components/footer.astro";
 <Layout title="Quiero Galleta Page">
   <HeaderNav client:visible />
   <HeroImg />
-  <MenuQG />
-  <Top />
-  <Siguenos />
+  <article class="flex flex-col lg:flex-row lg:max-w-[1380px] lg:mx-auto">
+    <MenuQG />
+    <Top />
+    <Siguenos />
+  </article>
   <Footer />
 </Layout>

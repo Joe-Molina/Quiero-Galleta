@@ -11,9 +11,9 @@ import { preciosBrownies } from "../../info/precios.js";
 
 <Layout title="QG Menu de Galletas">
   <HeaderNav client:visible />
-  <HeroImg title="Especiales" linkImg="/fondos/galletasfondo.png" />
+  <HeroImg title="Brownies" bg="bg-[url('/fondos/brownies.png')]" />
   <article
-    class="mt-16 bg-white py-2 px-8 mx-4 text-center shadow-xl rounded-lg"
+    class="my-2 bg-white py-2 px-8 mx-4 text-center shadow-xl rounded-lg lg:w-96 lg:mx-auto lg:my-5"
   >
     <h3 class="font-bold">Precios</h3>
     {
@@ -22,7 +22,7 @@ import { preciosBrownies } from "../../info/precios.js";
       ))
     }
   </article>
-  <section class="flex flex-col">
+  <section class="flex flex-col lg:flex-row lg:justify-center lg:mb-10">
     {
       brownies.map((galleta) => (
         <CardProduct
@@ -32,7 +32,7 @@ import { preciosBrownies } from "../../info/precios.js";
         />
       ))
     }
-    <figure class="m-3">
+    <figure class="m-3 lg:hidden">
       <img src="/fondos/galletasfondo2.png" alt="" class="rounded-2xl" />
     </figure>
   </section>

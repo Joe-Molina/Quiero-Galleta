@@ -9,12 +9,11 @@ import { Otrasbebidas } from "../../info/bebidas.js";
 
 <Layout title="Bebidas Cafe caliente">
   <HeaderNav client:visible />
-  <HeroImg title="Cafe caliente" linkImg="/fondos/galletasfondo.png" />
-  <article
-    class="mt-16 bg-white py-2 px-8 mx-4 text-center shadow-xl rounded-lg"
+  <HeroImg title="Cafe caliente" bg="bg-[url('/bebidas/otras.png')]" />
+
+  <section
+    class="flex flex-col lg:flex-row lg:flex-wrap lg:max-w-[1280px] lg:mx-auto lg:justify-center lg:mb-5"
   >
-  </article>
-  <section class="flex flex-col">
     {
       Otrasbebidas.map((bebida) => (
         <CardBebida
@@ -24,7 +23,7 @@ import { Otrasbebidas } from "../../info/bebidas.js";
         />
       ))
     }
-    <figure class="m-3">
+    <figure class="m-3 lg:hidden">
       <img src="/fondos/galletasfondo2.png" alt="" class="rounded-2xl" />
     </figure>
   </section>

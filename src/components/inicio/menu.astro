@@ -4,13 +4,13 @@ interface Props {}
 const {} = Astro.props;
 ---
 
-<section>
+<section class="lg:w-1/3">
   <h1 class="text-center text-5xl font-bold text-shadow mt-5">Menu</h1>
   <p class="text-center mt-3 font-bold">¡Monstruosamente deliciosas!</p>
 
   <a href="Menu/Galletas">
     <article
-      class="flex items-center justify-between h-32 m-3 bg-green-200 rounded-xl shadow-sm overflow-hidden"
+      class="flex items-center justify-between h-32 m-3 bg-green-200 rounded-xl shadow-sm lg:shadow-lg overflow-hidden lg:hover:scale-105 transition"
     >
       <img
         src="/galletas/monstruosas/nutella_sal_marina.png"
@@ -25,10 +25,10 @@ const {} = Astro.props;
 
   <a href="Menu/Brownies">
     <article
-      class="flex flex-row-reverse items-center justify-between h-32 m-3 bg-blue-300 rounded-xl shadow-sm overflow-hidden"
+      class="flex flex-row-reverse items-center justify-between h-32 m-3 bg-blue-300 rounded-xl shadow-sm lg:shadow-lg overflow-hidden lg:hover:scale-105 transition"
     >
       <img
-        src="/brownies/brookieDeNutellaSalMarina.png"
+        src="/Brownies/brookieDeNutellaSalMarina.png"
         alt=""
         class="h-28 mr-5"
       />
@@ -40,7 +40,7 @@ const {} = Astro.props;
 
   <a href="Menu/Bebidas">
     <article
-      class="flex items-center justify-between h-32 m-3 bg-red-300 rounded-xl shadow-sm overflow-hidden"
+      class="flex items-center justify-between h-32 m-3 bg-red-300 rounded-xl shadow-sm lg:shadow-lg overflow-hidden lg:hover:scale-105 transition"
     >
       <img
         src="/bebidas/OtrasBebidas-removebg-preview.png"
